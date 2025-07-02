@@ -50,6 +50,7 @@ img {
   padding: 1rem 2rem;
   border: 1px solid var(--dark-color);
   background: transparent;
+  color: var(--dark-color);
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
