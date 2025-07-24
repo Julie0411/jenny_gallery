@@ -31,10 +31,19 @@
     <header class="header">
       <div class="container header-flex">
         <img src="assets/logo.png" alt="Lumina Creative" class="logo" />
-        <ul class="main-menu">
-          <li><a class="current" href="/">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <ul id="main-menu">
+          <li id="header-home">
+            <a class="current" href="index.html">Home</a>
+          </li>
+          <li id="header-about"><a href="about.html">About</a></li>
+          <li id="header-contact"><a href="contact.html">Contact</a></li>
+          <li id="header-search">
+            <a onclick="deleteHeader()"><i class="fas fa-search"></i></a>
+          </li>
+          <!--
+              TODO add animation to make the search bar appears on top of the navigator to keep order in the page
+              TODO (Make the navigator disappears)
+           -->
         </ul>
       </div>
     </header>
@@ -50,86 +59,98 @@
     </section>
 
     <section class="gallery">
-      <div class="container container lg gallery-flex">
+      <div class="container container lg gallery-grid">
         <div class="gallery-item">
           <a
-            href="/assets/image1.jpg"
-            data-lightbox="image-1"
-            data-title="Image 1"
+            href="/assets/rose.jpg"
+            data-lightbox="rose"
+            data-title="A black and white rose"
           >
-            <img src="/assets/portfolio1.jpg" alt="Portfolio 1" />
+            <img src="/assets/rosePortfolio.jpg" alt="rosePortfolio" />
           </a>
         </div>
         <div class="gallery-item">
           <a
-            href="/assets/image2.jpg"
-            data-lightbox="image-2"
-            data-title="Image 2"
+            href="/assets/treeStreet.jpg"
+            data-lightbox="treeStreet"
+            data-title="A romantic street with trees all along the track"
           >
-            <img src="/assets/portfolio2.jpg" alt="Portfolio 2" />
+            <img
+              src="/assets/treeStreetPortfolio.jpg"
+              alt="treeStreetPortfolio"
+            />
           </a>
         </div>
         <div class="gallery-item">
           <a
-            href="/assets/image3.jpg"
-            data-lightbox="image-3"
-            data-title="Image 3"
+            href="/assets/lakeMountains.jpg"
+            data-lightbox="lakeMountains"
+            data-title="A beautiful view with a lake and some mountains"
           >
-            <img src="/assets/portfolio3.jpg" alt="Portfolio 3" />
+            <img
+              src="/assets/lakeMountainsPortfolio.jpg"
+              alt="lakeMountainsPortfolio"
+            />
           </a>
         </div>
         <div class="gallery-item">
           <a
-            href="/assets/image4.jpg"
-            data-lightbox="image-4"
-            data-title="Image 4"
+            href="/assets/baobab.jpg"
+            data-lightbox="baobab"
+            data-title="A black and white photo with some baobab"
           >
-            <img src="/assets/portfolio4.jpg" alt="Portfolio 4" />
+            <img src="/assets/baobabPortfolio.jpg" alt="baobabPortfolio" />
           </a>
         </div>
         <div class="gallery-item">
           <a
-            href="/assets/image5.jpg"
-            data-lightbox="image-5"
-            data-title="Image 5"
+            href="/assets/lightCeiling.jpg"
+            data-lightbox="lightCeilings"
+            data-title="Some light on a ceiling"
           >
-            <img src="/assets/portfolio5.jpg" alt="Portfolio 5" />
+            <img
+              src="/assets/lightCeilingPortfolio.jpg"
+              alt="lightCeilingPortfolio"
+            />
           </a>
         </div>
         <div class="gallery-item">
           <a
-            href="/assets/image6.jpg"
-            data-lightbox="image-6"
-            data-title="Image 6"
+            href="/assets/childWithAnimal.jpg"
+            data-lightbox="childWithAnimal"
+            data-title="A little girl who walks on the streets with a stuffed lion in her hand"
           >
-            <img src="/assets/portfolio6.jpg" alt="Portfolio 6" />
+            <img
+              src="/assets/childWithAnimalPortfolio.jpg"
+              alt="childWithAnimalPortfolio"
+            />
           </a>
         </div>
         <div class="gallery-item">
           <a
-            href="/assets/image7.jpg"
-            data-lightbox="image-7"
-            data-title="Image 7"
+            href="/assets/dandelion.jpg"
+            data-lightbox="dandelion"
+            data-title="A black and white dandelion"
           >
-            <img src="/assets/portfolio7.jpg" alt="Portfolio 7" />
+            <img src="/assets/dandelionPortfolio.jpg" alt="Portfolio 7" />
           </a>
         </div>
         <div class="gallery-item">
           <a
-            href="/assets/image8.jpg"
-            data-lightbox="image-8"
-            data-title="Image 8"
+            href="/assets/polarBear.jpg"
+            data-lightbox="polarBear"
+            data-title="A little dirty polar bear cub"
           >
-            <img src="/assets/portfolio8.jpg" alt="Portfolio 8" />
+            <img src="/assets/polarBearPortfolio.jpg" alt="polarBear" />
           </a>
         </div>
         <div class="gallery-item">
           <a
-            href="/assets/image9.jpg"
-            data-lightbox="image-9"
-            data-title="Image 9"
+            href="/assets/woman.jpg"
+            data-lightbox="woman"
+            data-title="A woman"
           >
-            <img src="/assets/portfolio9.jpg" alt="Portfolio 9" />
+            <img src="/assets/womanPortfolio.jpg" alt="woman" />
           </a>
         </div>
       </div>
@@ -170,5 +191,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
