@@ -8,12 +8,11 @@ Lumina Creative è una semplice landing page per un'agenzia creativa, realizzata
 - Galleria immagini con Lightbox2
 - Font personalizzati (Google Fonts)
 - Icone tramite Font Awesome
-- Sezioni: Hero, Gallery, Footer
 
 ## Struttura del progetto
 
 ```
-lumina-creative/
+jenny_gallery/
 │
 ├── assets/
 │   ├── image1.jpg
@@ -49,4 +48,4 @@ lumina-creative/
 
 ---
 
-© 2025 Lumina Creative
+© 2025 Jenny Gallery
