@@ -45,11 +45,3 @@ function searchFunction(searchValue) {
         }
     });
 }
-
-function recreateHeader() {
-    console.log("blur");
-    home.style.display = "block";
-    contact.style.display = "block";
-    about.style.display = "block";
-    input.style.display = "none";
-}

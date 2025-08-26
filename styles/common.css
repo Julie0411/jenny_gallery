@@ -118,6 +118,15 @@ img {
   background: var(--primary-color);
 }
 
+#header-input input {
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding-bottom: 1rem;
+}
+
 .current {
   background: var(--primary-color);
   font-weight: 600;
